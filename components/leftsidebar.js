@@ -16,7 +16,7 @@ export default function LeftSideBar() {
     ]
     return (
         <>
-            <GridItem pl='2' w={200} borderRadius="10" p={6} color="white" bg='black' area={'nav'}>
+            <GridItem pl='2' w={200} borderRadius="10" p={6} color="white" bg='black' area={'left'}>
                 {/* Loop through buttons array */}
                 {buttons.map((button) =>
                     <Item key={button.id} item={button} />

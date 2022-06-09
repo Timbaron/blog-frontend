@@ -10,7 +10,7 @@ export default function LeftSideBar() {
     ]
     return (
         <>
-            <GridItem pl='2' w={200} borderRadius="10" color="white" bg='black' p={6} area={'main2'}>
+            <GridItem pl='2' w={200} borderRadius="10" color="white" bg='black' p={6} area={'right'}>
                 RightSideBar
             </GridItem>
         </>

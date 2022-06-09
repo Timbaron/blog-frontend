@@ -21,8 +21,8 @@ export default function Home() {
         </h1>
         <Grid
           templateAreas={`"header header header"
-                  "nav main main2"
-                  "nav main main2"`}
+                  "left main right"
+                  "left main right"`}
           gridTemplateRows={'50px 1fr 5px'}
           gridTemplateColumns={'200px 1fr'}
           h='700px'
