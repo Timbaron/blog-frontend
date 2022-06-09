@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import SideBar from '../components/sidebar'
+import LeftSideBar from '../components/leftsidebar'
+import RightSideBar from '../components/rightsidebar'
 import Main from '../components/main'
-import Footer from '../components/footer'
 import { Grid } from '@chakra-ui/react'
 
 export default function Home() {
@@ -17,26 +17,26 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Tim Blog!</a>
+          Welcome to <a href="https://twitter.com">Twitter!</a>
         </h1>
         <Grid
-          templateAreas={`"header header"
-                  "nav main"
-                  "nav footer"`}
-          gridTemplateRows={'50px 1fr 30px'}
+          templateAreas={`"header header header"
+                  "nav main main2"
+                  "nav main main2"`}
+          gridTemplateRows={'50px 1fr 5px'}
           gridTemplateColumns={'200px 1fr'}
-          h='500px'
-          gap='5'
+          h='700px'
+          gap='3'
           color='blackAlpha.700'
           fontWeight='bold'
         >
-        <SideBar />
-        <Main />
-        <Footer />
+          <LeftSideBar />
+          <Main />
+          <RightSideBar />
 
         </Grid>
 
-        
+
       </main>
 
       <footer className={styles.footer}>
@@ -46,7 +46,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Built with Love by Timothy Akiode
-          
+
         </a>
       </footer>
     </div>
